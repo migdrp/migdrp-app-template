@@ -3,22 +3,21 @@
 Para iniciar la app:
 
 1.- Clona este repositorio con 
-  
-  git clone url
+
+```git clone url```
 
 2.- Instala las dependencias
 
-  npm i
+```npm i```
 
 
-Para iniciar la plantilla en development
+*Para iniciar la plantilla en development
 
-  npm run dev
+```npm run dev```
 
-Para iniciar la compilación en producción 
+*Para iniciar la compilación en producción 
 
-  npm run prod
+```npm run prod```
 
 
-
-El front end se ejecuta en https://localhost:2503
+*El front end se ejecuta en https://localhost:2503
