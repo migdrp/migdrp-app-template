@@ -19,3 +19,6 @@ Para iniciar la compilación en producción
 
   npm run prod
 
+
+
+El front end se ejecuta en https://localhost:2503
