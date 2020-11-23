@@ -14,7 +14,7 @@ const developmentConfig = {
 	mode: 'development',
 	devtool: 'inline-source-map',
 	entry: {
-    'mig-app-root': [ './src/public/mig-app-root.ts' ]
+    'custom-element': [ './src/public/custom-element.ts' ]
   },
   resolve: {
     extensions: ['.ts', '.js']
@@ -29,15 +29,6 @@ const developmentConfig = {
       }
     ]
   },
-    /*
-    optimization:{
-        splitChunks:{
-            cacheGroups:{
-                threejs:{ test: /[\\/]node_modules[\\/]((three).*)[\\/]/, name:'threejs', chunks:'all' }
-            }
-        }
-    },
-    */
   output:{
     filename:'[name].bundle.js',
     path:path.resolve(__dirname, 'dist'),
@@ -70,7 +61,7 @@ const developmentConfig = {
 const productionConfig = {
 	mode: 'production',
 	entry: {
-    'mig-app-root': [ './src/public/mig-app-root.ts' ]
+    'mig-app-root': [ './src/public/custom-element.ts' ]
   },
   resolve: {
     extensions: ['.ts', '.js']
@@ -85,15 +76,6 @@ const productionConfig = {
       }
     ]
   },
-    /*
-    optimization:{
-        splitChunks:{
-            cacheGroups:{
-                threejs:{ test: /[\\/]node_modules[\\/]((three).*)[\\/]/, name:'threejs', chunks:'all' }
-            }
-        }
-    },
-    */
   output:{
     filename:'[name].bundle.js',
     path:path.resolve(__dirname, 'dist'),
