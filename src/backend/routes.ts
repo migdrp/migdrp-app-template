@@ -1,8 +1,8 @@
 import express from 'express';
+
 import path from 'path';
 
 const router = express.Router();
-
 
 
 
@@ -12,8 +12,6 @@ router.use('/dist', express.static(path.join(__dirname, `../../dist`)));
 
 
 router.use('/', express.static(path.join(__dirname, `../../dist`)));
-
-
 
 
 
