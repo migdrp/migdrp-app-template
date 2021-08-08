@@ -1,6 +1,10 @@
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import dotenv from 'dotenv';
+dotenv.config();
+
+console.log('Testing env variables: ', process.env.NODE_ENV);
 
 const config: webpack.Configuration = {
   mode: process.env.NODE_ENV as any,
