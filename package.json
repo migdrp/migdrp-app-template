@@ -14,7 +14,8 @@
 		"prod": "set NODE_ENV=production&& npx run-s wp:build serve",
 		"serve": "ts-node ./src/backend/server.ts",
 		"wp:dev": "webpack -w --config webpack.config.ts",
-		"wp:build": "webpack --config webpack.config.ts"
+		"wp:build": "webpack --config webpack.config.ts",
+		"start": "pm2 start ./src/backend/server.ts -i 1"
 	},
 	"browserslist": "> 0.25%, not dead",
 	"author": "migdrp <mig_drp@hotmail.com>",
