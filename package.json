@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 		"dev": "set NODE_ENV=development&& npx run-p wp:dev serve",
-		"prod": "set NODE_ENV=production&& npx run-s wp:build serve",
+		"prod": "set NODE_ENV=production&& npx run-s wp:build start",
 		"serve": "ts-node ./src/backend/server.ts",
 		"wp:dev": "webpack -w --config webpack.config.ts",
 		"wp:build": "webpack --config webpack.config.ts",
